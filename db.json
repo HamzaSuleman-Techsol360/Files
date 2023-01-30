@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "HamzaDawood",
+      "password": "Hamza123",
+      "firstname": "Hamza",
+      "lastname": "Dawood",
+      "email": "hamzasuleman@gmail.com",
+      "role": "Employer"
+    },
+    {
+      "id": 2,
+      "username": "HamzaSuleman",
+      "password": "Hamza123",
+      "firstname": "Hamza",
+      "lastname": "Suleman",
+      "email": "hamzasuleman@techsol360.com",
+      "role": "Candidate"
+    }
+    
+  ]
+}
