@@ -18,10 +18,6 @@
             box-sizing: border-box;
         }
 
-        :root {
-            --primary-color: #D71920;
-        }
-
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f7f7f7;
@@ -63,7 +59,7 @@
         .recipient-name {
             font-weight: 700;
             font-size: 46px;
-            color: var(--primary-color);
+            color: #D71920;
             margin: 10px 0;
         }
 
@@ -84,7 +80,7 @@
             width: 100px;
             margin-top: 45px;
             display: inline-block;
-            border-top: 4px solid var(--primary-color);
+            border-top: 4px solid #D71920;
         }
 
         .issue-date {
@@ -165,7 +161,7 @@
         <div class="top-section">
             <p class="certificate-title">Certificate Of {{CertificateType}}</p>
             <p class="recipient-title">Present to</p>
-            <p class="recipient-name" style={{'color': 'red'}}>{{UserFullName}}</p>
+            <p class="recipient-name">{{UserFullName}}</p>
             <div class="certificate-body">
                 <p>In recognition of completion of all requirements of</p>
                 <p class="degree-title">{{CertificateTitle}}</p>
