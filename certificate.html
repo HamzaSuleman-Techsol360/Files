@@ -16,6 +16,10 @@
             box-sizing: border-box;
         }
         
+        :root {
+            --primary-color: {{PrimaryColor}};
+        }
+        
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f7f7f7;
@@ -53,7 +57,7 @@
 
         .recipient-name {
             font-weight: 700;
-            color: #D71920; /* Red Color */
+            color: var(--primary-color); /* Red Color */
             font-size: 46px;
             margin: 10px 0;
         }
@@ -75,7 +79,7 @@
 			width: 100px;
 			margin-top: 45px;
 		    display: inline-block;
-            border-top: 4px solid #D71920;;
+            border-top: 4px solid var(--primary-color);
 		}
 		
 		.issue-date {
