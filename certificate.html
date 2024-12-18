@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate of {{CertificateType}}</title>
     <!-- Google Fonts - Inter -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         /* General Reset */
@@ -79,7 +80,7 @@
             width: 100px;
             margin-top: 45px;
             display: inline-block;
-            border-top: 4px solid var(--primary-color);
+            border-top: 4px solid 'red';
         }
 
         .issue-date {
@@ -160,7 +161,7 @@
         <div class="top-section">
             <p class="certificate-title">Certificate Of {{CertificateType}}</p>
             <p class="recipient-title">Present to</p>
-            <p class="recipient-name">{{UserFullName}}</p>
+            <p class="recipient-name" style={{'color': 'red'}}>{{UserFullName}}</p>
             <div class="certificate-body">
                 <p>In recognition of completion of all requirements of</p>
                 <p class="degree-title">{{CertificateTitle}}</p>
@@ -183,11 +184,13 @@
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const primaryColor = {{PrimaryColor}};
-            document.documentElement.style.setProperty("--primary-color", primaryColor);
-        });
-    </script>
+    $('.recipient-name').css('color', {{PrimaryColor}});
+    $('.date-divider').css('border-top', '4px solid ' + {{PrimaryColor}});
+
+
+
+  
+</script>
 </body>
 
 </html>
