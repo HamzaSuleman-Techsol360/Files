@@ -161,13 +161,13 @@
         <div class="top-section">
             <p class="certificate-title">Certificate Of {{CertificateType}}</p>
             <p class="recipient-title">Present to</p>
-            <p class="recipient-name">{{UserFullName}}</p>
+            <p class="recipient-name" {{RecipientNameStyle}}>{{UserFullName}}</p>
             <div class="certificate-body">
                 <p>In recognition of completion of all requirements of</p>
                 <p class="degree-title">{{CertificateTitle}}</p>
             </div>
-            <span class="date-divider"></span>
-            <p class="issue-date">{{IssueDate}}</p>
+            <span class="date-divider" {{DateDividerStyle}}></span>
+            <p class="issue-date" >{{IssueDate}}</p>
         </div>
 
         <!-- Bottom Section -->
