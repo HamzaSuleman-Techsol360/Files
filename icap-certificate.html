@@ -1,0 +1,171 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certificate of {{CertificateType}}</title>
+
+  <!-- Google Fonts - Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      padding: 20px;
+    }
+
+    .certificate-container {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      background-color: #fff;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .top-section {
+      background-color: #f2f2f2;
+      padding: 40px 40px 50px 40px;
+      position: relative;
+    }
+
+    .logo-top {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+    }
+
+    .logo-img {
+      height: 70px;
+    }
+
+    .certificate-title {
+      font-size: 43px;
+      font-weight: 600;
+      color: #03a84e;
+    }
+
+    .recipient-title {
+      font-size: 18px;
+      margin: 23px 0;
+      font-weight: 400;
+      color: #555;
+    }
+
+    .recipient-name {
+      font-weight: 700;
+      font-size: 46px;
+      color: #03a84e;
+      margin: 10px 0;
+      word-break: break-word;
+    }
+
+    .certificate-body {
+      margin-top: 28px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .degree-title {
+      font-weight: 700;
+      font-size: 28px;
+      color: #333;
+      margin-top: 5px;
+      word-break: break-word;
+    }
+
+    .date-divider {
+      width: 100px;
+      margin-top: 45px;
+      display: inline-block;
+      border-top: 4px solid #03a84e;
+    }
+
+    .issue-date {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .bottom-section {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      background-color: #fff;
+      padding: 20px 40px;
+      border-top: 1px solid #ddd;
+      min-height: 80px;
+    }
+
+    .footer-right {
+      text-align: right;
+    }
+
+    .signature-img {
+      height: 70px;
+    }
+
+    @media (max-width: 600px) {
+      .top-section {
+        padding: 60px 20px 40px 20px;
+      }
+
+      .logo-top {
+        top: 20px;
+        right: 20px;
+      }
+
+      .recipient-name {
+        font-size: 28px;
+      }
+
+      .degree-title {
+        font-size: 20px;
+      }
+
+      .bottom-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="certificate-container">
+    <!-- Top Section -->
+    <div class="top-section">
+      <div class="logo-top">
+        <img class="logo-img" src="{{Logo}}" alt="" />
+      </div>
+      <p class="certificate-title">Certificate Of {{CertificateType}}</p>
+      <p class="recipient-title">Presented to</p>
+      <p class="recipient-name" {{recipientnamestyle}}>{{UserFullName}}</p>
+      <div class="certificate-body">
+        <p>In recognition of completion of all requirements of</p>
+        <p class="degree-title">{{CertificateTitle}}</p>
+      </div>
+      <span class="date-divider" {{datedividerstyle}}></span>
+      <p class="issue-date">{{IssueDate}}</p>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="bottom-section">
+      <div class="footer-right">
+        <img class="signature-img" src="{{IssuerName}}" alt="" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
