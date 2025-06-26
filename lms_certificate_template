@@ -19,6 +19,8 @@
         }
 
         body {
+            width: 792px;   /* 11 inches * 72 points */
+            height: 612px;  /* 8.5 inches * 72 points */
             font-family: 'Inter', sans-serif;
             background-color: #f7f7f7;
             color: #333;
@@ -27,7 +29,12 @@
         /* Certificate Container */
 
         .certificate-container {
-            width: -webkit-fill-available;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             background-color: #fff;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
