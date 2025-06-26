@@ -11,151 +11,153 @@
             box-sizing: border-box;
         }
 
-        body {
-            width: 100%;
-            height: 100%;
+        html, body {
+            width: 792px;   /* 11 inches * 72 points */
+            height: 612px;  /* 8.5 inches * 72 points */
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #f7f7f7 0%, #e0e0e0 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background: #fff;
+            overflow: hidden;
         }
 
         .certificate-container {
             width: 100%;
-            aspect-ratio: 16 / 9;
-            border: 8px solid #03a84e;
-            padding: 40px 60px;
+            height: 100%;
+            border: 6px solid #03a84e;
+            padding: 30px 40px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             background: #fff;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-            border-radius: 0px;
             position: relative;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .certificate-container:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
         }
 
         .certificate-header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
+            margin-bottom: 20px;
         }
 
         .logo {
-            height: 70px;
+            height: 60px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .header-content {
+            flex: 1;
+            text-align: center;
+            margin: 0 20px;
         }
 
         .certificate-title {
-            font-size: 42px;
+            font-size: 36px;
             font-weight: 700;
             color: #03a84e;
             text-transform: uppercase;
-            text-align: center;
-            flex: 1;
+            line-height: 1.1;
+            margin-bottom: 8px;
         }
 
         .certificate-subtitle {
-            font-size: 18px;
+            font-size: 14px;
             color: #555;
-            text-align: center;
-            margin-top: 8px;
+            line-height: 1.3;
+        }
+
+        .spacer {
+            width: 60px;
         }
 
         .recipient-section {
             text-align: center;
-            margin: 30px 0;
+            margin: 25px 0;
         }
 
         .recipient-title {
-            font-size: 20px;
+            font-size: 16px;
             color: #555;
             text-transform: uppercase;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
         }
 
         .recipient-name {
-            font-size: 48px;
+            font-size: 40px;
             color: #03a84e;
             font-weight: 700;
             letter-spacing: 1px;
+            line-height: 1.1;
         }
 
         .certificate-body {
             text-align: center;
             color: #333;
-            max-width: 80%;
-            margin: 0 auto;
+            margin: 20px auto;
+            max-width: 90%;
+        }
+
+        .body-text {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 12px;
+            line-height: 1.4;
         }
 
         .course-title {
-            font-size: 26px;
+            font-size: 22px;
             font-weight: 700;
             color: #333;
-            margin-top: 15px;
+            margin: 12px 0;
+            line-height: 1.2;
         }
 
         .description {
-            font-size: 16px;
+            font-size: 13px;
             color: #555;
-            margin-top: 15px;
+            margin-top: 12px;
             font-style: italic;
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
         .certificate-footer {
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            margin-top: 30px;
+            margin-top: 25px;
         }
 
         .issuer-info {
             color: #555;
-            line-height: 1.4;
-            font-size: 16px;
+            line-height: 1.3;
+            font-size: 14px;
         }
 
         .issuer-name {
             font-weight: 700;
             color: #333;
+            font-size: 15px;
         }
 
         .issuer-role {
-            margin: 4px 0;
+            margin: 3px 0;
+            font-size: 14px;
         }
 
         .institute-name {
             font-weight: 700;
             color: #03a84e;
             text-transform: uppercase;
-            margin-top: 5px;
+            margin-top: 4px;
+            font-size: 14px;
+            letter-spacing: 0.5px;
         }
 
         .date-section {
             text-align: right;
-            font-size: 16px;
+            font-size: 14px;
             color: #555;
-        }
-
-        @media print {
-            body {
-                padding: 0;
-                background: #fff;
-            }
-
-            .certificate-container {
-                box-shadow: none;
-                border: 6px solid #03a84e;
-                width: 100%;
-                height: 100%;
-                aspect-ratio: unset;
-            }
+            font-weight: 600;
         }
     </style>
 </head>
@@ -166,11 +168,11 @@
     <!-- Header with Logo & Title -->
     <div class="certificate-header">
         <img class="logo" src="https://icap.org.pk/wp-content/uploads/2024/12/icap-logo.png" alt="ICAP Logo">
-        <div>
+        <div class="header-content">
             <div class="certificate-title">Certificate of {{CertificateType}}</div>
             <div class="certificate-subtitle">This is to certify the successful completion of the {{CertificateTitle}}</div>
         </div>
-        <div style="width: 70px;"></div>
+        <div class="spacer"></div>
     </div>
 
     <!-- Recipient Section -->
@@ -181,7 +183,7 @@
 
     <!-- Body -->
     <div class="certificate-body">
-        <p>In recognition of the successful fulfillment of all academic and professional requirements for</p>
+        <p class="body-text">In recognition of the successful fulfillment of all academic and professional requirements for</p>
         <div class="course-title">{{CertificateTitle}}</div>
         <div class="description">
             {{Description}}
