@@ -49,6 +49,14 @@
             color: #333;
         }
 
+        .certificate-description {
+            margin-top: 20px;
+            font-size: 15px;
+            color: #444;
+            max-width: 700px;
+            line-height: 1.6;
+        }
+
         .recipient-title {
             font-size: 18px;
             margin: 23px 0;
