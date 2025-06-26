@@ -12,8 +12,8 @@
         }
 
         html, body {
-            width: 792px;   /* 11 inches * 72 points */
-            height: 612px;  /* 8.5 inches * 72 points */
+            width: 100%;  
+            height: 100%; 
             font-family: 'Inter', sans-serif;
             background: #fff;
             overflow: hidden;
