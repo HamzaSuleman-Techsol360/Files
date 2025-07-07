@@ -20,8 +20,8 @@
         }
 
         .certificate-container {
-            width:100%; 
-            height:100%;
+            width: 100%; 
+            height: 100%;
             border: 6px solid #03a84e;
             padding: 30px 40px;
             display: flex;
@@ -39,7 +39,7 @@
         }
 
         .logo {
-            height: 60px;
+            height: 80px;
             width: auto;
             object-fit: contain;
         }
@@ -51,39 +51,39 @@
         }
 
         .certificate-title {
-            font-size: 36px;
+            font-size: 52px;
             font-weight: 700;
             color: #03a84e;
             text-transform: uppercase;
             line-height: 1.1;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
         }
 
         .certificate-subtitle {
-            font-size: 14px;
+            font-size: 22px;
             color: #555;
             line-height: 1.3;
         }
 
         .spacer {
-            width: 60px;
+            width: 80px;
         }
 
         .recipient-section {
             text-align: center;
-            margin: 25px 0;
+            margin: 35px 0;
         }
 
         .recipient-title {
-            font-size: 16px;
+            font-size: 24px;
             color: #555;
             text-transform: uppercase;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             letter-spacing: 1px;
         }
 
         .recipient-name {
-            font-size: 40px;
+            font-size: 60px;
             color: #03a84e;
             font-weight: 700;
             letter-spacing: 1px;
@@ -98,24 +98,24 @@
         }
 
         .body-text {
-            font-size: 14px;
+            font-size: 22px;
             color: #333;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
             line-height: 1.4;
         }
 
         .course-title {
-            font-size: 22px;
+            font-size: 36px;
             font-weight: 700;
             color: #333;
-            margin: 12px 0;
+            margin: 16px 0;
             line-height: 1.2;
         }
 
         .description {
-            font-size: 13px;
+            font-size: 20px;
             color: #555;
-            margin-top: 12px;
+            margin-top: 16px;
             font-style: italic;
             line-height: 1.5;
         }
@@ -124,38 +124,38 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            margin-top: 25px;
+            margin-top: 35px;
         }
 
         .issuer-info {
             color: #555;
             line-height: 1.3;
-            font-size: 14px;
+            font-size: 20px;
         }
 
         .issuer-name {
             font-weight: 700;
             color: #333;
-            font-size: 15px;
+            font-size: 22px;
         }
 
         .issuer-role {
-            margin: 3px 0;
-            font-size: 14px;
+            margin: 5px 0;
+            font-size: 20px;
         }
 
         .institute-name {
             font-weight: 700;
             color: #03a84e;
             text-transform: uppercase;
-            margin-top: 4px;
-            font-size: 14px;
+            margin-top: 6px;
+            font-size: 20px;
             letter-spacing: 0.5px;
         }
 
         .date-section {
             text-align: right;
-            font-size: 14px;
+            font-size: 20px;
             color: #555;
             font-weight: 600;
         }
