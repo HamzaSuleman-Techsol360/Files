@@ -20,8 +20,8 @@
         }
 
         .certificate-container {
-            width:842px; 
-            height:595px;
+            width:100%; 
+            height:100%;
             border: 6px solid #03a84e;
             padding: 30px 40px;
             display: flex;
