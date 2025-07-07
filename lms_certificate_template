@@ -113,7 +113,7 @@
         }
 
         .description {
-            font-size: 20px;
+            font-size: 28px;
             color: #555;
             margin-top: 16px;
             font-style: italic;
@@ -185,9 +185,6 @@
     <div class="certificate-body">
         <p class="body-text">In recognition of the successful fulfillment of all academic and professional requirements for</p>
         <div class="course-title">{{CertificateTitle}}</div>
-        <div class="description">
-            {{Description}}
-        </div>
         <div class="description">
             {{Description}}
         </div>
