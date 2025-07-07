@@ -188,6 +188,9 @@
         <div class="description">
             {{Description}}
         </div>
+        <div class="description">
+            {{Description}}
+        </div>
     </div>
 
     <!-- Footer with Issuer & Date -->
